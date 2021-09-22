@@ -10,3 +10,10 @@ jobs:
       - uses: ./action-a
         with:
           MY_NAME: "Mona"
+  
+  test-env:
+    name: Printing out Env-variables
+    runs-on: ubuntu-latest
+    steps:
+    - name: print
+      run: env
